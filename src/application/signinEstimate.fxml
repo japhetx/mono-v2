@@ -14,7 +14,7 @@
             <Font size="13.0" />
          </font>
       </TextField>
-      <Label fx:id="lblStatus" layoutX="83.0" layoutY="34.0" text="Sign in to continue" textFill="#212121">
+      <Label layoutX="83.0" layoutY="34.0" text="Sign in to continue" textFill="#212121">
          <font>
             <Font size="30.0" />
          </font>
@@ -24,7 +24,7 @@
             <Font size="14.0" />
          </font>
       </PasswordField>
-            <Button fx:id="btnSigin" layoutX="144.0" layoutY="211.0" mnemonicParsing="false" onAction="#Signin" prefHeight="35.0" prefWidth="130.0" text="Sign in" textFill="#212121">
+            <Button layoutX="144.0" layoutY="211.0" mnemonicParsing="false" onAction="#Signin" prefHeight="35.0" prefWidth="130.0" text="Sign in" textFill="#212121">
          <font>
             <Font size="14.0" />
          </font>

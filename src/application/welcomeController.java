@@ -30,7 +30,7 @@ public class welcomeController {
 		scene.getStylesheets().add(getClass().getResource("signin.css").toExternalForm());
 		primaryStage.setScene(scene);
 		primaryStage.setResizable(false);
-		primaryStage.setTitle("Construction Cost Estimate - Please sign in to continue.");
+		primaryStage.setTitle("Payroll Management System - Please sign in to continue.");
 		primaryStage.getIcons().add(new Image("/application/icon.png"));
 		primaryStage.show();
 	}
