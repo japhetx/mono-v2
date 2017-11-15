@@ -14,17 +14,17 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <TextField fx:id="txtUsername" focusTraversable="false" layoutX="85.0" layoutY="101.0" prefHeight="35.0" prefWidth="248.0" promptText="Username">
+      <TextField fx:id="txtUsername" layoutX="85.0" layoutY="101.0" prefHeight="35.0" prefWidth="248.0" promptText="Username">
          <font>
             <Font size="13.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="txtPassword" focusTraversable="false" layoutX="85.0" layoutY="154.0" prefHeight="35.0" prefWidth="248.0" promptText="Password">
+      <PasswordField fx:id="txtPassword" layoutX="85.0" layoutY="154.0" prefHeight="35.0" prefWidth="248.0" promptText="Password">
          <font>
             <Font size="14.0" />
          </font>
       </PasswordField>
-      <Button focusTraversable="false" layoutX="144.0" layoutY="211.0" mnemonicParsing="false" onAction="#Signin" prefHeight="35.0" prefWidth="130.0" text="Sign in" textFill="#212121">
+      <Button defaultButton="true" layoutX="144.0" layoutY="211.0" mnemonicParsing="false" onAction="#Signin" prefHeight="35.0" prefWidth="130.0" text="Sign in" textFill="#212121">
          <font>
             <Font size="14.0" />
          </font>

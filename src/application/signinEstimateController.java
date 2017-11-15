@@ -31,7 +31,7 @@ public class signinEstimateController {
 			projectswindow = primaryStage;
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
-			primaryStage.setTitle("Construction Cost Estimate - Choose project to get started.");
+			primaryStage.setTitle("Payroll Management System");
 			primaryStage.getIcons().add(new Image("/application/icon.png"));
 			primaryStage.show();
 
@@ -40,7 +40,7 @@ public class signinEstimateController {
 			Alert alert = new Alert(AlertType.ERROR);
 			Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
 			stage.getIcons().add(new Image(this.getClass().getResource("icon.png").toString()));
-			alert.setTitle("Construction Cost Estimate - Sign Error	");
+			alert.setTitle("Payroll Management System");
 			alert.setHeaderText("Sign in Error");
 			alert.setContentText("Invalid Username and Password...");
 
