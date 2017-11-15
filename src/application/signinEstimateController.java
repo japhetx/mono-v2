@@ -22,7 +22,7 @@ public class signinEstimateController {
 	public void SigninEstimate(ActionEvent event) throws Exception {
 		if (txtUsername.getText().equals("user")&& txtPassword.getText().equals("pass")) {
 			// Close other window
-			Main.mainWindow.close();
+			//Main.mainWindow.close();
 			welcomeController.signinWindow.close();
 			// New stage here
 			Stage primaryStage = new Stage();

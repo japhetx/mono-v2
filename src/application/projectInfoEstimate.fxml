@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.projectInfoEstimateController">
+   <children>
+      <Button fx:id="btnProject" layoutX="119.0" layoutY="51.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Project" />
+      <Button fx:id="btnEstimate" layoutX="261.0" layoutY="51.0" mnemonicParsing="false" onAction="#switchEstimate" prefHeight="35.0" prefWidth="130.0" text="Estimate" />
+      <Button fx:id="btnCostbook" layoutX="400.0" layoutY="51.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Costbook" />
+      <Button fx:id="btnReport" layoutX="540.0" layoutY="51.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Report" />
+      <Label layoutX="56.0" layoutY="129.0" text="Project Information">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <GridPane layoutX="57.0" layoutY="160.0" prefHeight="56.0" prefWidth="668.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="60.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="616.0" minWidth="10.0" prefWidth="608.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="70.0" text="PROJECT:" />
+            <Label text="ADDRESS:" GridPane.rowIndex="1" />
+            <TextField promptText="Enter project name here..." GridPane.columnIndex="1" />
+            <TextField promptText="Enter project address here..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label layoutX="57.0" layoutY="253.0" text="Schedules of Work">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ChoiceBox fx:id="chboxStageEstimate" layoutX="390.0" layoutY="251.0" prefWidth="150.0" />
+      <Button fx:id="btnAddStageEstimate" layoutX="551.0" layoutY="251.0" mnemonicParsing="false" text="Add Stage" />
+      <Button fx:id="btnRemoveStageEstimate" layoutX="632.0" layoutY="251.0" mnemonicParsing="false" text="Remove Stage" />
+      <TableView fx:id="tblDescriptionEstimate" layoutX="57.0" layoutY="286.0" prefHeight="386.0" prefWidth="668.0">
+        <columns>
+          <TableColumn prefWidth="27.0" text="#" />
+          <TableColumn prefWidth="640.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAddDescriptionEstimate" layoutX="492.0" layoutY="684.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Add" />
+      <Button fx:id="btnDeleteDescriptionEstimate" layoutX="653.0" layoutY="684.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Delete" />
+      <Button fx:id="btnEditDescriptionEstimate" layoutX="573.0" layoutY="684.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Edit" />
+   </children>
+</AnchorPane>

@@ -17,6 +17,6 @@
     <Button fx:id="btnAdd" defaultButton="true" layoutX="40.0" layoutY="505.0" mnemonicParsing="false" onAction="#addProjectEstimate" prefHeight="25.0" prefWidth="75.0" text="Add" textFill="#212121" />
       <Button fx:id="btnEdit" disable="true" layoutX="125.0" layoutY="505.0" mnemonicParsing="false" onAction="#editProjectEstimate" prefHeight="25.0" prefWidth="75.0" text="Edit" textFill="#212121" />
       <Button fx:id="btnDelete" disable="true" layoutX="209.0" layoutY="505.0" mnemonicParsing="false" onAction="#deleteProjectEstimate" prefHeight="25.0" prefWidth="75.0" text="Delete" textFill="#212121" />
-      <Button fx:id="btnOpen" disable="true" layoutX="384.0" layoutY="505.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Open" textFill="#212121" />
+      <Button fx:id="btnOpen" disable="true" layoutX="384.0" layoutY="505.0" mnemonicParsing="false" onAction="#openProjectEstimate" prefHeight="25.0" prefWidth="75.0" text="Open" textFill="#212121" />
    </children>
 </AnchorPane>
