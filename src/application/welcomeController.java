@@ -25,9 +25,9 @@ public class welcomeController {
 
 	public void showLoginPayroll(ActionEvent event ) throws Exception{
 		Stage primaryStage = new Stage();
+		signinWindow = primaryStage;
 		Parent root = FXMLLoader.load(getClass().getResource("/application/signinPayroll.fxml"));
 		Scene scene = new Scene(root);
-		scene.getStylesheets().add(getClass().getResource("signin.css").toExternalForm());
 		primaryStage.setScene(scene);
 		primaryStage.setResizable(false);
 		primaryStage.setTitle("Payroll Management System - Please sign in to continue.");

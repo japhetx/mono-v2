@@ -43,6 +43,12 @@ public class projectsEstimateController implements Initializable {
 
 	ObservableList<String> list = FXCollections.observableArrayList();
 
+	public static Stage window;
+	public static Scene scene1;
+	public static Scene scene2;
+	public static Scene scene3;
+	public static Scene scene4;
+
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		lstProjects.setItems(list);
@@ -97,13 +103,26 @@ public class projectsEstimateController implements Initializable {
 	}
 
 	public void openProjectEstimate(ActionEvent event) throws Exception{
+		signinEstimateController.projectswindow.close();
 		Stage primaryStage = new Stage();
-		Parent root = FXMLLoader.load(getClass().getResource("/application/signinPayroll.fxml"));
-		Scene scene = new Scene(root);
-		primaryStage.setScene(scene);
+		Parent root1 = FXMLLoader.load(getClass().getResource("/application/projectInfoEstimate.fxml"));
+		scene1 = new Scene(root1);
+
+		Parent root2 = FXMLLoader.load(getClass().getResource("/application/projectEstimationEstimate.fxml"));
+		scene2 = new Scene(root2);
+
+		Parent root3 = FXMLLoader.load(getClass().getResource("/application/projectCostbookEstimate.fxml"));
+		scene3 = new Scene(root3);
+
+		Parent root4 = FXMLLoader.load(getClass().getResource("/application/projectReportEstimate.fxml"));
+		scene4 = new Scene(root4);
+
+		window = primaryStage;
 		primaryStage.setResizable(false);
-		primaryStage.setTitle("Payroll Management System - Please sign in to continue.");
+		primaryStage.setTitle("Construction Cost Estimate");
 		primaryStage.getIcons().add(new Image("/application/icon.png"));
+
+		primaryStage.setScene(scene1);
 		primaryStage.show();
 	}
 

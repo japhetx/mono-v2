@@ -6,22 +6,22 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="760.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.projectCostbookEstimateController">
    <children>
-      <Button fx:id="btnProject" layoutX="289.0" layoutY="33.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Project" />
-      <Button fx:id="btnEstimate" layoutX="433.0" layoutY="33.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Estimate" />
-      <Button fx:id="btnCostbook" layoutX="572.0" layoutY="33.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Costbook" />
-      <Button fx:id="btnReport" layoutX="710.0" layoutY="33.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Report" />
-      <TableView editable="true" layoutX="233.0" layoutY="157.0" prefHeight="516.0" prefWidth="663.0">
+      <Button fx:id="btnProject" focusTraversable="false" layoutX="148.0" layoutY="46.0" mnemonicParsing="false" onAction="#showProject" prefHeight="47.0" prefWidth="121.0" text="Project" />
+      <Button fx:id="btnEstimate" focusTraversable="false" layoutX="269.0" layoutY="46.0" mnemonicParsing="false" onAction="#showEstimate" prefHeight="47.0" prefWidth="121.0" text="Estimate" />
+      <Button fx:id="btnCostbook" layoutX="390.0" layoutY="46.0" mnemonicParsing="false" onAction="#showCostbook" prefHeight="47.0" prefWidth="121.0" text="Costbook" />
+      <Button fx:id="btnReport" focusTraversable="false" layoutX="511.0" layoutY="46.0" mnemonicParsing="false" onAction="#showReport" prefHeight="47.0" prefWidth="121.0" text="Report" />
+      <TableView focusTraversable="false" layoutX="95.0" layoutY="169.0" prefHeight="554.0" prefWidth="591.0">
         <columns>
-          <TableColumn prefWidth="78.0" text="UNIT" />
-            <TableColumn prefWidth="431.0" text="Description" />
-            <TableColumn prefWidth="153.0" text="Unit Cost" />
+          <TableColumn prefWidth="57.0" text="UNIT" />
+          <TableColumn prefWidth="435.0" text="Description" />
+            <TableColumn prefWidth="98.0" text="UNIT COST" />
         </columns>
       </TableView>
-      <Button layoutX="817.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Remove" />
-      <Button layoutX="730.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Add" />
-      <TextField layoutX="233.0" layoutY="120.0" prefHeight="25.0" prefWidth="192.0" promptText="Search materials..." />
-      <Button layoutX="438.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Search" />
+      <TextField focusTraversable="false" layoutX="95.0" layoutY="130.0" prefHeight="25.0" prefWidth="187.0" promptText="Search materials..." />
+      <Button focusTraversable="false" layoutX="290.0" layoutY="130.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Search" />
+      <Button focusTraversable="false" layoutX="607.0" layoutY="130.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Remove" />
+      <Button focusTraversable="false" layoutX="521.0" layoutY="130.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Add" />
    </children>
 </AnchorPane>

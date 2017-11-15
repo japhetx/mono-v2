@@ -19,15 +19,16 @@ public class signinEstimateController {
 	@FXML
 	private TextField txtPassword;
 
+	public static Stage projectswindow;
+
 	public void SigninEstimate(ActionEvent event) throws Exception {
 		if (txtUsername.getText().equals("user")&& txtPassword.getText().equals("pass")) {
-			// Close other window
-			//Main.mainWindow.close();
+			Main.mainWindow.close();
 			welcomeController.signinWindow.close();
-			// New stage here
 			Stage primaryStage = new Stage();
 			Parent root = FXMLLoader.load(getClass().getResource("/application/projectsEstimate.fxml"));
 			Scene scene = new Scene(root);
+			projectswindow = primaryStage;
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
 			primaryStage.setTitle("Construction Cost Estimate - Choose project to get started.");

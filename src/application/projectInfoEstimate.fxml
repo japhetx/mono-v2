@@ -10,49 +10,43 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.projectInfoEstimateController">
+<AnchorPane prefHeight="760.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.projectInfoEstimateController">
    <children>
-      <Button fx:id="btnProject" layoutX="119.0" layoutY="51.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Project" />
-      <Button fx:id="btnEstimate" layoutX="261.0" layoutY="51.0" mnemonicParsing="false" onAction="#switchEstimate" prefHeight="35.0" prefWidth="130.0" text="Estimate" />
-      <Button fx:id="btnCostbook" layoutX="400.0" layoutY="51.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Costbook" />
-      <Button fx:id="btnReport" layoutX="540.0" layoutY="51.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="Report" />
-      <Label layoutX="56.0" layoutY="129.0" text="Project Information">
-         <font>
-            <Font size="15.0" />
-         </font></Label>
-      <GridPane layoutX="57.0" layoutY="160.0" prefHeight="56.0" prefWidth="668.0">
+      <Button fx:id="btnProject" layoutX="148.0" layoutY="46.0" mnemonicParsing="false" onAction="#showProject" prefHeight="47.0" prefWidth="121.0" text="Project" />
+      <Button fx:id="btnEstimate" focusTraversable="false" layoutX="269.0" layoutY="46.0" mnemonicParsing="false" onAction="#showEstimate" prefHeight="47.0" prefWidth="121.0" text="Estimate" />
+      <Button fx:id="btnCostbook" focusTraversable="false" layoutX="390.0" layoutY="46.0" mnemonicParsing="false" onAction="#showCostbook" prefHeight="47.0" prefWidth="121.0" text="Costbook" />
+      <Button fx:id="btnReport" focusTraversable="false" layoutX="511.0" layoutY="46.0" mnemonicParsing="false" onAction="#showReport" prefHeight="47.0" prefWidth="121.0" text="Report" />
+      <Label layoutX="97.0" layoutY="134.0" text="Project Information" />
+      <GridPane layoutX="97.0" layoutY="159.0" prefHeight="60.0" prefWidth="591.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="60.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="616.0" minWidth="10.0" prefWidth="608.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.0" minWidth="10.0" prefWidth="61.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="530.0" minWidth="10.0" prefWidth="530.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label prefHeight="17.0" prefWidth="70.0" text="PROJECT:" />
-            <Label text="ADDRESS:" GridPane.rowIndex="1" />
-            <TextField promptText="Enter project name here..." GridPane.columnIndex="1" />
-            <TextField promptText="Enter project address here..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="NAME" />
+            <Label text="ADDRESS" GridPane.rowIndex="1" />
+            <TextField focusTraversable="false" promptText="Enter project name here" GridPane.columnIndex="1" />
+            <TextField focusTraversable="false" promptText="Enter project address here" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          </children>
       </GridPane>
-      <Label layoutX="57.0" layoutY="253.0" text="Schedules of Work">
-         <font>
-            <Font size="15.0" />
-         </font></Label>
-      <ChoiceBox fx:id="chboxStageEstimate" layoutX="390.0" layoutY="251.0" prefWidth="150.0" />
-      <Button fx:id="btnAddStageEstimate" layoutX="551.0" layoutY="251.0" mnemonicParsing="false" text="Add Stage" />
-      <Button fx:id="btnRemoveStageEstimate" layoutX="632.0" layoutY="251.0" mnemonicParsing="false" text="Remove Stage" />
-      <TableView fx:id="tblDescriptionEstimate" layoutX="57.0" layoutY="286.0" prefHeight="386.0" prefWidth="668.0">
+      <Label layoutX="97.0" layoutY="275.0" text="Schedules of work" />
+      <ChoiceBox focusTraversable="false" layoutX="331.0" layoutY="271.0" prefWidth="150.0" />
+      <Button focusTraversable="false" layoutX="488.0" layoutY="271.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Add Stage" />
+      <Button focusTraversable="false" layoutX="591.0" layoutY="271.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Remove Stage" />
+      <TableView focusTraversable="false" layoutX="95.0" layoutY="306.0" prefHeight="377.0" prefWidth="591.0">
         <columns>
-          <TableColumn prefWidth="27.0" text="#" />
-          <TableColumn prefWidth="640.0" text="Description" />
+          <TableColumn prefWidth="34.0" text="#" />
+          <TableColumn prefWidth="556.0" text="Description" />
         </columns>
       </TableView>
-      <Button fx:id="btnAddDescriptionEstimate" layoutX="492.0" layoutY="684.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Add" />
-      <Button fx:id="btnDeleteDescriptionEstimate" layoutX="653.0" layoutY="684.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Delete" />
-      <Button fx:id="btnEditDescriptionEstimate" layoutX="573.0" layoutY="684.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Edit" />
+      <Button focusTraversable="false" layoutX="521.0" layoutY="697.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Add" />
+      <Button focusTraversable="false" layoutX="579.0" layoutY="697.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Edit" />
+      <Button focusTraversable="false" layoutX="637.0" layoutY="697.0" mnemonicParsing="false" text="Delete" />
+      <Button focusTraversable="false" layoutX="591.0" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Save" />
    </children>
 </AnchorPane>
