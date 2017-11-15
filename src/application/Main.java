@@ -16,8 +16,7 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("welcome.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
-			primaryStage.setTitle("Edres Construction & Supply | General Engineering"
-					+ " & General Building Contractor");
+			primaryStage.setTitle("Edres Construction & Supply");
 			primaryStage.getIcons().add(new Image("/application/icon.png"));
 			primaryStage.show();
 		} catch(Exception e) {

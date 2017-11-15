@@ -26,7 +26,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <Button fx:id="btnEstimate" focusTraversable="false" layoutX="250.0" layoutY="220.0" mnemonicParsing="false" onAction="#showLoginEstimate" prefHeight="53.0" prefWidth="252.0" text="Construction Cost Estimator" textFill="#212121">
+      <Button fx:id="btnEstimate" focusTraversable="false" layoutX="250.0" layoutY="220.0" mnemonicParsing="false" onAction="#showLoginEstimate" prefHeight="53.0" prefWidth="252.0" text="Construction Cost Estimate" textFill="#212121">
          <font>
             <Font size="14.0" />
          </font>
