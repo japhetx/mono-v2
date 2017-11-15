@@ -8,7 +8,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
@@ -91,6 +94,17 @@ public class projectsEstimateController implements Initializable {
 		if (result.get() == ButtonType.OK){
 			lstProjects.getItems().remove(lstProjects.getSelectionModel().getSelectedIndex());
 		}
+	}
+
+	public void openProjectEstimate(ActionEvent event) throws Exception{
+		Stage primaryStage = new Stage();
+		Parent root = FXMLLoader.load(getClass().getResource("/application/signinPayroll.fxml"));
+		Scene scene = new Scene(root);
+		primaryStage.setScene(scene);
+		primaryStage.setResizable(false);
+		primaryStage.setTitle("Payroll Management System - Please sign in to continue.");
+		primaryStage.getIcons().add(new Image("/application/icon.png"));
+		primaryStage.show();
 	}
 
 }
